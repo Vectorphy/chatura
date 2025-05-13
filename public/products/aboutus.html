@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Chatura Ayurveda</title>
+    <!-- Google Fonts for Poppins (sans-serif) and Playfair Display (serif) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" /> <!-- Link to external CSS (styles.css) -->
+</head>
+<style>
+    /* Base Styles and Typography */
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        color: #e5e4b8;
+        /* dark gray text for readability */
+        background-color: #ffffff;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: 'Playfair Display', serif;
+        /* serif font for headings */
+        color: #2a2a2a;
+        /* slightly darker for headings */
+        margin-bottom: 0.5em;
+    }
+
+    p {
+        line-height: 1.6;
+        margin-bottom: 1em;
+    }
+
+    strong {
+        color: #555024;
+        /* emphasize key terms with an earthy dark olive tone */
+    }
+
+    /* Container and Layout */
+    .section-content {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    /* Hero Section Styling */
+    .hero-section {
+        background-color: #FFF8E1;
+        /* soft warm amber tone background */
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.125rem;
+        max-width: 800px;
+        margin: 1rem auto 0;
+        /* center the intro text under heading */
+    }
+
+    /* Philosophy & Story Sections */
+    .philosophy-section,
+    .story-section {
+        background-color: #FFFFFF;
+        /* white background for contrast */
+    }
+
+    /* (Additional spacing or specific styles can be added if needed) */
+
+    /* Values Section */
+    .values-section {
+        background-color: #FFFFFF;
+    }
+
+    .values-section h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .values-list {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        /* This creates a responsive grid that fits 4 columns on large screens 
+     and fewer columns on smaller screens automatically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .value-item img {
+        height: 50px;
+        margin-bottom: 0.5rem;
+    }
+
+    .value-item p {
+        font-weight: 600;
+    }
+
+    /* Founder Section */
+    .founder-section {
+        background-color: #FFF8E1;
+        /* reuse soft amber background to highlight founder section */
+    }
+
+    .founder-photo {
+        width: 8rem;
+        height: 8rem;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .founder-section h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .founder-title {
+        font-size: 0.9rem;
+        color: #555;
+        margin-bottom: 1rem;
+    }
+
+    .founder-section blockquote {
+        font-style: italic;
+        color: #444;
+        max-width: 600px;
+        margin: 0.5rem auto;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+
+    /* Responsive Typography Adjustments */
+    @media (max-width: 600px) {
+        .hero-section h1 {
+            font-size: 2rem;
+            /* slightly smaller on small screens */
+        }
+
+        .hero-section p {
+            font-size: 1rem;
+        }
+    }
+</style>
+
+<body>
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="section-content text-center">
+                <h1>About Chatura Ayurveda</h1>
+                <p>Chatura Ayurveda is a holistic wellness brand rooted in Ayurvedic tradition, where healing and beauty
+                    intertwine with nature.</p>
+            </div>
+        </section>
+
+        <!-- Our Philosophy Section -->
+        <article class="philosophy-section">
+            <div class="section-content">
+                <h2>Our Philosophy</h2>
+                <!-- Roots of Chatura Ayurveda: -->
+                <p><strong>Roots of Chatura Ayurveda:</strong></p>
+                <p>Chatura Ayurveda was born from the essence of Indian tradition, where the art of healing and beauty
+                    are
+                    intertwined with the rhythms of nature. Our philosophy is deeply rooted in Marma therapy,
+                    Aromatherapy,
+                    and Bhaishajya Kalpana, ancient practices that have been integral to Indian life for centuries,
+                    often
+                    practiced in everyday rituals but not fully recognized for their profound impact. Marma therapy, for
+                    instance, is like a hidden thread, subtly present in the soothing touch of a grandmother’s massage
+                    or
+                    the healing warmth of herbal applications. Aromatherapy connects us with the subtle energies of
+                    nature,
+                    elevating mood and well-being through the power of scent. Bhaishajya Kalpana, the meticulous art of
+                    medicinal preparation, ensures that every product is designed with precision and care. At Chatura
+                    Ayurveda, we strive to keep these arts alive, honoring the legacy of our ancestors by integrating
+                    these
+                    ancient practices into every product we create, infusing modern skincare with timeless wisdom.
+                </p>
+                </p>
+                <div id="morePhilosophy" class="hidden">
+                    <!-- The Heart of Marma and Indigenous Wisdom: -->
+                    <p>
+                        <strong> The Heart of Marma and Indigenous Wisdom:</strong>
+                    <p>
+                        Marma therapy is not just a practice; it is a connection to our innermost selves, aligning the
+                        body,
+                        mind, and spirit with the energies of nature. Our products are meticulously crafted to tap into
+                        this
+                        powerful tradition, using herbs and elements that resonate with the body’s natural rhythm.
+                        Sourced
+                        ethically from indigenous tribes who have preserved this knowledge for generations, our
+                        ingredients
+                        are pure, natural, and treated with the utmost respect for their origins. We believe in the
+                        sanctity
+                        of handmade processes, minimizing the use of machines to ensure that every product carries the
+                        touch
+                        of human care and ancient knowledge.
+                    </p>
+                    </p>
+
+                    <!-- Ayurveda and Bhaishajya Kalpana: -->
+                    <p>
+                        <strong> Ayurveda and Bhaishajya Kalpana:</strong>
+                    </p>
+
+                    <p>
+                        In Ayurveda, the concept of Bhaishajya Kalpana (भैषज्य कल्पना) encompasses the art and science
+                        of
+                        medicinal preparation, emphasizing the importance of meticulous formulation. As the ancient
+                        verse
+                        suggests:
+                    </p>
+                    <blockquote style="text-align: center;">
+                        "यस्य कस्य तरोर्मूलं येन केनापि मिश्रितम् ।
+                        <br>
+                        यस्मै कस्मै प्रदातव्यं यद्वा तद्वा भविष्यति ॥"
+                        <br>
+
+                        "If the root of any random tree is
+                        mixed by anyone in any manner and
+                        given to anyone,
+                        <br>
+                        the results will be as random and uncertain."
+                    </blockquote>
+                    <p>
+                        This wisdom underscores the importance of precision and understanding in the creation of
+                        remedies.
+                        At Chatura Ayurveda, we honor this tradition by ensuring that every product is carefully
+                        designed,
+                        respecting the principles of Rasashastra and Bhaishajya Kalpana, blending only the purest
+                        ingredients in precise combinations to maintain their healing properties.
+                    </p>
+                    <!-- The Origins in Nature’s Five Elements: -->
+                    <p>
+                        <strong> The Origins in Nature’s Five Elements:</strong>
+                    </p>
+                    <p>
+                        Our journey begins with the recognition of the five elements—earth, water, fire, air, and
+                        ether—that constitute both the universe and our being. These elements are the foundation of our
+                        formulations, reflecting our commitment to crafting products that are not generalized but
+                        tailored to align with the roots of human nature. Each of our creations is imbued with the
+                        essence of these elements, ensuring that the products resonate with the individual’s specific
+                        needs, fostering balance, stability, and holistic wellness. This approach is inherently
+                        spiritual, as it connects us with the universal energies that sustain life.
+                    </p>
+
+                    <!-- Connecting Ancient Cultures and Modern Beauty: -->
+                    <p>
+                        <strong> Connecting Ancient Cultures and Modern Beauty:</strong>
+                    </p>
+                    <p>
+                        Chatura Ayurveda’s philosophy is not limited to the boundaries of India; it transcends to
+                        ancient cultures that share a deep reverence for nature’s healing powers. Our products represent
+                        a fusion of traditions, drawing inspiration from the aromatic therapy of ancient Egypt, the
+                        Marma practices of India, and the Bhaishajya traditions that have stood the test of time. These
+                        practices, though distinct, are united by a common thread—a profound respect for the natural
+                        world and its capacity to heal and nurture. In each jar and bottle, we encapsulate this
+                        heritage, offering not just skincare but a journey into the heart of ancient wisdom.
+                    </p>
+
+                    <!-- A Commitment to Ethical Craftsmanship: -->
+                    <p>
+                        <strong> A Commitment to Ethical Craftsmanship:</strong>
+                    </p>
+                    <p>
+                        At Chatura Ayurveda, we are committed to sustainability and ethical craftsmanship. Our
+                        ingredients are sourced with the utmost respect for the environment and the communities that
+                        provide them. By working closely with indigenous tribes, we ensure that our sourcing practices
+                        are fair, sustainable, and supportive of the traditional ways of life. Every product is
+                        handmade, a deliberate choice that preserves the integrity and potency of our natural
+                        ingredients while minimizing our ecological footprint. This commitment is not just about
+                        preserving the earth; it’s about preserving the spiritual connection between humanity and
+                        nature.
+                    </p>
+
+                    <!-- Honoring the Feminine and the Universal: -->
+                    <p>
+                        <strong> Honoring the Feminine and the Universal:</strong>
+                    </p>
+                    <p>
+                        While Chatura Ayurveda is dedicated to promoting health and beauty for all, our philosophy is
+                        particularly aligned with the empowerment of women. We believe that true beauty comes from
+                        balance and inner strength, qualities that are nurtured through mindful self-care. Our products
+                        are designed to be more than just beauty treatments; they are rituals that honor the feminine
+                        spirit, promote self-respect, and encourage a deeper connection with one’s true self. By
+                        embracing these values, we aim to inspire a broader understanding of beauty—one that is
+                        inclusive, respectful, and rooted in the profound wisdom of our traditions.
+                    </p>
+
+                    <!-- Conclusion: -->
+                    <p>
+                        <strong> Conclusion:</strong>
+                    </p>
+                    <p>
+                        Chatura Ayurveda is not just a brand; it is a movement—a call to return to the roots of our
+                        heritage and to embrace a way of living that honors both nature and self. It is about
+                        recognizing the interconnectedness of all life and the power of ancient practices to heal,
+                        nurture, and empower. Through our products, we invite you to experience the timeless beauty of
+                        Ayurveda, where every drop carries the whispers of generations past and the promise of a
+                        healthier, more balanced future.
+                    </p>
+                </div>
+                <button id="readMoreBtn">Read More ▼</button>
+            </div>
+        </article>
+
+        <!-- Our Story Section -->
+        <article class="story-section">
+            <div class="section-content">
+                <h2>Our Story</h2>
+                <p>
+                    Dr. Prerna's journey from a housewife to the founder of a successful company is a story deeply
+                    rooted in
+                    the traditions and values of her Indian heritage. As a trained Ayurvedic doctor with a Bachelor of
+                    Medicine and Surgery (BMS), she drew upon her professional knowledge and personal experiences to
+                    shape
+                    her path. Her life’s journey reflects a rich blend of ancestral wisdom and personal ambition,
+                    embodying
+                    the harmonious balance between pursuing her professional dreams and honoring the traditional values
+                    of
+                    Ayurveda. This unique blend of ambition and responsibility highlights the deep respect she has for
+                    her
+                    heritage, showcasing the journey many Indian women aspire to achieve.
+                </p>
+                <div id="moreStory" class="hidden">
+                    <p>
+                        Growing up in a bustling household in Pune, Dr. Prerna was surrounded by the gentle
+                        hum of everyday life. Her grandmother, a revered figure in their family, was a master of
+                        Ayurveda,
+                        blending herbs and crafting remedies with unparalleled skill. Dr. Prerna spent her formative
+                        years
+                        observing her grandmother's meticulous methods and absorbing the essence of her work. The scents
+                        of
+                        fresh herbs and the sight of her grandmother’s hands gracefully preparing natural remedies left
+                        an
+                        indelible mark on her young mind.
+                        <br>
+                        As Dr. Prerna grew older, she embraced the role of a housewife with dedication and grace. Her
+                        days
+                        were filled with the responsibilities of managing a home, raising children, and supporting her
+                        family. However, the values and techniques she had learned from her grandmother never faded from
+                        her
+                        heart. She continued to practice the art of Ayurveda in her own small way, crafting remedies for
+                        her
+                        family and friends, all the while nurturing a deep-seated passion for the traditional healing
+                        arts.
+                        <br>
+                        Over time, Dr. Prerna’s desire to share her grandmother’s legacy with a broader audience grew
+                        stronger. She saw the potential to combine her passion for Ayurveda with her ambition to create
+                        something meaningful. The transition from a housewife to the founder of Chatura Ayurveda was not
+                        without its challenges, but Dr. Prerna was fueled by a vision to honor her grandmother’s work
+                        and
+                        make natural, ethical skincare accessible to others.
+                        <br>
+                        With unwavering determination, Dr. Prerna founded Chatura Ayurveda, a company that embodies the
+                        principles of Marma therapy, Aromatherapy, and Bhaishajya Kalpana. Her vision was clear: to
+                        create
+                        products that reflect the purity of traditional practices while adapting them for contemporary
+                        use.
+                        Every aspect of Chatura Ayurveda was infused with the wisdom passed down from her grandmother,
+                        from
+                        the meticulous selection of ingredients to the careful crafting of each product.
+                        <br>
+                        Chatura Ayurveda sources its raw materials from pristine and untouched regions—herbs from the
+                        wild
+                        mountain routes of Malshej Ghat, henna from Rajasthan, saffron from Kashmir, and indigo from
+                        Kerala.<br>
+                        These ingredients are not only chosen for their quality but also for the traditional knowledge
+                        that
+                        accompanies them. Dr. Prerna collaborated with indigenous communities to ensure that the methods
+                        of
+                        harvesting and preparation were respectful of their traditions and reflective of their deep
+                        connection to the land.
+                        <br>
+                        Dr. Prerna’s journey is a testament to the delicate balance between ambition and the
+                        responsibility
+                        of preserving ancient traditions and knowledge. As she navigated the world of business, she
+                        remained
+                        committed to keeping the ancient art of Ayurveda alive, ensuring that every product was a
+                        respectful
+                        homage to traditional practices. Her success is not just measured by the growth of Chatura
+                        Ayurveda
+                        but by her ability to honor her past while embracing the future.
+                        <br>
+                        Her story resonates with many Indian women who balance their personal ambitions with the
+                        responsibility of preserving cultural heritage. It reflects the profound impact of ancestral
+                        wisdom
+                        and the strength found in combining tradition with modern aspirations. Dr. Prerna’s journey from
+                        a
+                        housewife to a founder of Chatura Ayurveda is a celebration of resilience, respect for
+                        tradition,
+                        and the power of following one’s passion.
+                        <br>
+                    <blockquote style="text-align: center;">A Legacy of Wisdom and Empowerment</blockquote>
+                    <br>
+                    Through Chatura Ayurveda, Dr. Prerna continues to honor her grandmother’s legacy as a practicenor of
+                    ayurveda while paving the way for a new generation. Each product she creates is a tribute to the
+                    art of natural healing and a reflection of her commitment to preserving and sharing traditional
+                    knowledge. Her story is a reminder that true empowerment comes from embracing one’s heritage and
+                    using it to create something that enriches the lives of others.
+                    <br>
+                    In every bottle of Chatura Ayurveda, the essence of Dr. Prerna’s journey lives on—a harmonious
+                    blend of tradition, ambition, and the responsibility of preserving ancient wisdom that celebrates
+                    the
+                    timeless wisdom of the past while forging a path to the future.
+                    </p>
+                </div>
+                <button id="readMoreStoryBtn">Read More ▼</button>
+            </div>
+        </article>
+
+        <!-- Values/Commitments Section -->
+        <section class="values-section">
+            <div class="section-content">
+                <h2>Our Values</h2>
+                <div class="values-list">
+                    <div class="value-item">
+                        <img src="placeholder-icon.png" alt="100% Natural icon">
+                        <p>100% Natural</p>
+                    </div>
+                    <div class="value-item">
+                        <img src="placeholder-icon.png" alt="Handmade icon">
+                        <p>Handmade</p>
+                    </div>
+                    <div class="value-item">
+                        <img src="placeholder-icon.png" alt="Ethically Sourced icon">
+                        <p>Ethically Sourced</p>
+                    </div>
+                    <div class="value-item">
+                        <img src="placeholder-icon.png" alt="Eco-Conscious icon">
+                        <p>Eco-Conscious</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Founder Info Section -->
+        <section class="founder-section">
+            <div class="section-content text-center">
+                <img src="placeholder-founder.jpg" alt="Dr. Prerna, Founder" class="founder-photo">
+                <h3>Dr. Prerna</h3>
+                <p class="founder-title">Founder &amp; CEO</p>
+                <aside>
+                    <blockquote>“True beauty comes from balance and inner strength, nurtured through mindful self-care.”
+                    </blockquote>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <script>
+        // script.js
+        document.getElementById('readMoreBtn').addEventListener('click', function () {
+            var moreText = document.getElementById('morePhilosophy');
+            if (moreText.classList.contains('hidden')) {
+                moreText.classList.remove('hidden');
+                this.textContent = 'Read Less ▲';
+            } else {
+                moreText.classList.add('hidden');
+                this.textContent = 'Read More ▼';
+            }
+        });
+        document.getElementById('readMoreStoryBtn').addEventListener('click', function () {
+            var moreText = document.getElementById('moreStory');
+            if (moreText.classList.contains('hidden')) {
+                moreText.classList.remove('hidden');
+                this.textContent = 'Read Less ▲';
+            } else {
+                moreText.classList.add('hidden');
+                this.textContent = 'Read More ▼';
+            }
+        });
+
+    </script>
+</body>
+
+</html>

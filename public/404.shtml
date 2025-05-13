@@ -1,0 +1,155 @@
+<!--
+  This is a simple 404 error page for a website.
+  It includes an illustration, a message indicating the page was not found,
+  and a link to return to the homepage.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/x-icon" href="./coming_soon/img/favicon.ico" />
+  <title>404 Not Found – Chatura Ayurveda</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body.error404 {
+      margin: 0;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: #E5E4B8;
+      color: #7A7215;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    body.error404 img {
+      max-width: 300px;
+      width: 80%;
+      margin-bottom: 2rem;
+    }
+    body.error404 h1 {
+      font-size: 8rem;
+      margin: 0;
+      line-height: 1;
+    }
+    body.error404 p {
+      font-size: 1.5rem;
+      margin: 1rem 0 2rem;
+    }
+    body.error404 a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #4D602B;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    body.error404 a:hover {
+      background-color: #3a461a;
+    }
+    @media (max-width: 600px) {
+      body.error404 h1 { font-size: 5rem; }
+      body.error404 p  { font-size: 1.2rem; }
+      body.error404 img { max-width: 200px; }
+    }
+    /* Large desktops */
+    @media (max-width: 1200px) {
+      body.error404 img {
+        max-width: 70%;
+      }
+      body.error404 h1 {
+        font-size: 6rem;
+      }
+      body.error404 p {
+        font-size: 1.4rem;
+      }
+    }
+
+    /* Medium desktops / small laptops */
+    @media (max-width: 992px) {
+      body.error404 img {
+        max-width: 60%;
+      }
+      body.error404 h1 {
+        font-size: 5rem;
+      }
+      body.error404 p {
+        font-size: 1.3rem;
+      }
+    }
+
+    /* Tablets */
+    @media (max-width: 768px) {
+      body.error404 img {
+        max-width: 50%;
+      }
+      body.error404 h1 {
+        font-size: 4rem;
+      }
+      body.error404 p {
+        font-size: 1.2rem;
+      }
+    }
+
+    /* Large phones */
+    @media (max-width: 576px) {
+      body.error404 img {
+        max-width: 40%;
+      }
+      body.error404 h1 {
+        font-size: 3.5rem;
+      }
+      body.error404 p {
+        font-size: 1rem;
+      }
+      body.error404 a {
+        padding: 0.6rem 1.2rem;
+      }
+    }
+
+    /* Small phones */
+    @media (max-width: 400px) {
+      body.error404 img {
+        max-width: 30%;
+      }
+      body.error404 h1 {
+        font-size: 3rem;
+      }
+      body.error404 p {
+        font-size: 0.9rem;
+      }
+      body.error404 a {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+      }
+    }
+    /* Extra small phones */
+    @media (max-width: 320px) {
+      body.error404 img {
+        max-width: 25%;
+      }
+      body.error404 h1 {
+        font-size: 2.5rem;
+      }
+      body.error404 p {
+        font-size: 0.8rem;
+      }
+      body.error404 a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body class="error404">
+  <!-- make sure you copy your uploaded JPG into img/404-illustration.jpg -->
+  <img src="img/Logo.png" alt="Ayurveda illustration">
+  <h1>404</h1>
+  <p>Oops! We can’t find the page you’re looking for.</p>
+  <a href="https://chaturaayurvedaindia.in/">Back to Home</a>
+</body>
+</html>

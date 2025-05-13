@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatura Ayurveda – Shata-Dhauta-Ghrita</title>
+
+   <style>
+        /* Base Styles and Theme */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            /* fallback, ideally load custom fonts */
+            background-color: #E5E4B8;
+            /* a light beige/cream (warm tone) */
+            color: #4D602B;
+            /* a dark brownish color for text for good contrast */
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: Georgia, serif;
+            /* a more elegant serif for headings */
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        /* Product Header Section */
+        .product-header {
+
+            display: flex;
+            flex-direction: row;
+            /* Always row */
+            flex-wrap: nowrap;
+            /* Prevent wrapping to next line */
+            align-items: stretch;
+            /* Equal height */
+            gap: 1rem;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #e0dbc8;
+        }
+
+        .product-image,
+        .product-info {
+            flex: 1 1 50%;
+        }
+
+        .product-image {
+            display: flex;
+            align-items: stretch;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            /* Maintain full image without crop */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-title {
+            font-size: 2rem;
+            color: #4d602b;
+            /* dark saffron/brown color for title */
+            margin-bottom: 0.5rem;
+        }
+
+        .product-desc {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 0.75rem;
+        }
+
+        .rating {
+            font-size: 0.9rem;
+            color: #4d602b;
+            margin-bottom: 1rem;
+        }
+
+        .rating .stars {
+            color: #d4af37;
+            /* gold color for stars */
+            margin-right: 0.5rem;
+        }
+
+        .highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .highlights div {
+            display: flex;
+            align-items: center;
+            background: #f3efe7;
+            /* light grey-beige badge background */
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+        }
+
+        .highlights div span.icon {
+            margin-right: 0.3rem;
+        }
+
+        /* Accordion Styles */
+        .accordion-section {
+            border-top: 1px solid #e0dbc8;
+        }
+
+        .accordion-section:last-of-type {
+            border-bottom: 1px solid #e0dbc8;
+        }
+
+        .accordion-header {
+            background: none;
+            border: none;
+            width: 100%;
+            text-align: left;
+            padding: 1rem 0;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #4d602b;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordion-header:hover {
+            color: #4d602b;
+            /* slightly brighter on hover */
+        }
+
+        .accordion-header .indicator {
+            font-size: 1.5rem;
+            line-height: 1;
+            transition: transform 0.3s;
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 0.5rem 0 1rem 0;
+            /* top and bottom padding for spacing */
+        }
+
+        .accordion-content p,
+        .accordion-content li {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .accordion-content ul,
+        .accordion-content ol {
+            margin: 0.5rem 0 0.5rem 1.25rem;
+        }
+
+        .accordion-content ul li {
+            list-style-type: disc;
+        }
+
+        .accordion-content ol li {
+            list-style-type: decimal;
+        }
+
+        /* FAQ Q & A style inside accordion */
+        .accordion-content q,
+        .accordion-content .qa {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .accordion-content .question {
+            font-weight: bold;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .product-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .product-info {
+                padding: 0;
+            }
+
+            .product-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Product Header Section -->
+        <div class="product-header">
+            <div class="product-image">
+                <img src="/img/" alt="Eladi Oil">
+            </div>
+            <div class="product-info">
+                <h1 class="product-title">Shata-Dhauta-Ghrita</h1>
+                <p class="product-desc">Shata-Dhauta-Ghrita is a luxurious Ayurvedic skincare product that harnesses the
+                    power of traditional practices for modern beauty. Crafted using the revered method of Shata-Dhauta,
+                    this product features pure A2 (Gir) cow’s ghee, renowned for its superior quality. The ghee is
+                    meticulously washed 100 times to ensure purity, then infused in a copper vessel, resulting in a
+                    potent blend with exceptional anti-inflammatory and skin-rejuvenating properties.</p>
+                <div class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span>4.8 (45 reviews)</span>
+                </div>
+                <div class="highlights">
+                    <div><span class="icon">🌿</span><span>100% Natural</span></div>
+                    <div><span class="icon">🐇</span><span>Cruelty-Free</span></div>
+                    <div><span class="icon">🏺</span><span>Handmade</span></div>
+                    <div><span class="icon">🇮🇳</span><span>Made in India</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accordion Sections -->
+        <div id="accordion">
+
+            <div class="accordion-section">
+                <button class="accordion-header" data-index="0">
+                    Key Ingredients
+                    <span class="indicator">+</span>
+                </button>
+                <div class="accordion-content">
+                    <!-- <ul>
+                         <li><strong>Saffron (Kumkuma):</strong> Brightens complexion and imparts glow.</li>
+                         <li><strong>Sandalwood (Chandan):</strong> Soothes and cools the skin.</li>
+                         <li><strong>Turmeric (Haridra):</strong> Reduces inflammation and blemishes.</li>
+                         <li><strong>Manjistha:</strong> Evens skin tone and detoxifies.</li>
+                         <li><strong>Lotus Extract:</strong> Hydrates and maintains youthful skin.</li>
+                     </ul> -->
+                </div>
+            </div>
+
+            <div class="accordion-section">
+                <button class="accordion-header" data-index="1">
+                    Benefits
+                    <span class="indicator">+</span>
+                </button>
+                <div class="accordion-content">
+                    <ul>
+                        <li><strong>Anti-Inflammatory Skincare:</strong>Ideal for soothing and reducing skin
+                            inflammation. </li>
+                        <li><strong>Skin Rejuvenation:</strong> Enhances the skin's ability to repair and renew itself.
+                        </li>
+                        <li><strong>Overnight Hydration Treatment:</strong> Provides intense hydration and
+                            revitalization while you sleep.</li>
+                        <li><strong>Anti-Aging Effect:</strong> By slowing down the aging process, it minimizes the
+                            appearance of fine lines and wrinkles, supporting youthful skin.</li>
+                        <li><strong>Radiant Glow:</strong> Regular application enhances the skin’s natural radiance,
+                            giving it a healthy, luminous glow.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-section">
+                <button class="accordion-header" data-index="2">
+                    How to Use
+                    <span class="indicator">+</span>
+                </button>
+                <div class="accordion-content">
+                    <ol>
+                        <li>For optimal results, apply a generous amount of Shata-Dhauta-Ghrita to the face and neck
+                            each night before bedtime.</li>
+                        <li>Gently massage the product into the skin using upward strokes until fully absorbed.</li>
+                        <li>Leave the product on overnight to benefit from its deep-acting properties.</li>
+                    </ol>
+                    <h3>Caution</h3>
+                    <ul>
+                        <li>External Use Only: Designed exclusively for external application. Do not ingest</li>
+                        <li>Patch Test: Perform a patch test before use to ensure no allergic reactions.</li>
+                        <li>Discontinue Use: If any irritation occurs, discontinue use immediately and consult a
+                            healthcare professional.
+                        </li>
+                        <li>Storage: Store in a cool, dry place to maintain product efficacy and freshness.</li>
+                        <li>Consultation: If you have known allergies or sensitive skin, seek advice from a
+                            dermatologist before use.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-section">
+                <button class="accordion-header" data-index="3">
+                    Extraction Method
+                    <span class="indicator">+</span>
+                </button>
+                <div class="accordion-content">
+                    The extraction process involves obtaining ghee from high-quality A2 (Gir) cow’s milk. This ghee
+                    undergoes a meticulous washing process, 100 times in total, followed by infusion in a copper vessel.
+                    This traditional method enhances the ghee’s therapeutic properties, making it highly effective for
+                    skincare.
+
+                </div>
+            </div>
+
+
+            <div class="accordion-section">
+                <button class="accordion-header" data-index="5">
+                    FAQ
+                    <span class="indicator">+</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="qa">
+                        <p class="question">Q: What is Shata-Dhauta-Ghrita?</p>
+                        <p>A: Shata-Dhauta-Ghrita is a luxurious Ayurvedic skincare product made using pure A2 (Gir)
+                            cow’s ghee, which is washed 100 times and infused in a copper vessel. It's known for its
+                            anti-inflammatory and skin-rejuvenating properties.
+                        </p>
+                    </div>
+                    <div class="qa">
+                        <p class="question">Q: What type of ghee is used in Shata-Dhauta-Ghrita?</p>
+                        <p>A: Pure A2 (Gir) cow’s ghee is used, which is renowned for its superior quality.</p>
+                    </div>
+                    <div class="qa">
+                        <p class="question">Q: Is Shata-Dhauta-Ghrita suitable for all skin types?</p>
+                        <p>A: It is recommended to perform a patch test before first use to ensure no allergic
+                            reactions. If you have specific allergies or sensitive skin concerns, consult with a
+                            dermatologist.</p>
+                    </div>
+                    <div class="qa">
+                        <p class="question">Q: Where should I store Shata-Dhauta-Ghrita?
+                        </p>
+                        <p>A: Store the product in a cool, dry place to maintain its efficacy.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- #accordion -->
+    </div> <!-- .container -->
+
+    <script>
+        // Accordion functionality using vanilla JS
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const sectionIndex = header.getAttribute('data-index');
+                const content = header.nextElementSibling;
+                const indicator = header.querySelector('.indicator');
+                // Toggle this section
+                const isOpen = content.style.display === 'block';
+                // Close all sections (to allow only one open at a time, similar to a true accordion)
+                document.querySelectorAll('.accordion-content').forEach(c => c.style.display = 'none');
+                document.querySelectorAll('.accordion-header .indicator').forEach(ind => ind.textContent = '+');
+                if (!isOpen) {
+                    // Open this one
+                    content.style.display = 'block';
+                    indicator.textContent = '−';
+                } else {
+                    // It was open, now closing (so leave it closed, plus sign is already reset above)
+                    content.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
