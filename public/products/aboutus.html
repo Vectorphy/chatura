@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css" /> <!-- Link to external CSS (styles.css) -->
 </head>
 <style>
@@ -16,9 +17,9 @@
     body {
         margin: 0;
         font-family: 'Poppins', sans-serif;
-        color: #e5e4b8;
+        color: #4D602B;
         /* dark gray text for readability */
-        background-color: #ffffff;
+        background-color: #E5E4B8;
     }
 
     h1,
@@ -26,7 +27,7 @@
     h3 {
         font-family: 'Playfair Display', serif;
         /* serif font for headings */
-        color: #2a2a2a;
+        color: #4D602B;
         /* slightly darker for headings */
         margin-bottom: 0.5em;
     }
@@ -37,7 +38,7 @@
     }
 
     strong {
-        color: #555024;
+        color: #4D602B;
         /* emphasize key terms with an earthy dark olive tone */
     }
 
@@ -54,7 +55,7 @@
 
     /* Hero Section Styling */
     .hero-section {
-        background-color: #FFF8E1;
+        background-color: #E5E4B8;
         /* soft warm amber tone background */
     }
 
@@ -72,7 +73,7 @@
     /* Philosophy & Story Sections */
     .philosophy-section,
     .story-section {
-        background-color: #FFFFFF;
+        background-color: #E5E4B8;
         /* white background for contrast */
     }
 
@@ -80,7 +81,7 @@
 
     /* Values Section */
     .values-section {
-        background-color: #FFFFFF;
+        background-color: #E5E4B8;
     }
 
     .values-section h2 {
@@ -89,36 +90,60 @@
     }
 
     .values-list {
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
         gap: 2rem;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        /* This creates a responsive grid that fits 4 columns on large screens 
-     and fewer columns on smaller screens automatically */
-        align-items: center;
-        text-align: center;
+        margin-top: 2rem;
     }
 
-    .value-item img {
-        height: 50px;
-        margin-bottom: 0.5rem;
+    .value-item {
+        flex: 1 1 200px;
+        text-align: center;
+        padding: 1rem;
+        background-color: #fffaf0;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    }
+
+    .value-item:hover {
+        transform: translateY(-5px);
     }
 
     .value-item p {
+        color: #4D602B;
+        margin-bottom: 0.5rem;
         font-weight: 600;
+    }
+
+    .btn {
+        text-align: center;
+        color: #4D602B;
+        font-weight: 600;
+        padding: 1rem;
+        background-color: #fffaf0;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    }
+
+    .btn:hover {
+        transform: translateY(-5px);
     }
 
     /* Founder Section */
     .founder-section {
-        background-color: #FFF8E1;
+        background-color: #E5E4B8;
         /* reuse soft amber background to highlight founder section */
     }
 
     .founder-photo {
-        width: 8rem;
-        height: 8rem;
+        width: 10rem;
+        height: 12rem;
         object-fit: cover;
-        border-radius: 50%;
-        margin-bottom: 1rem;
+        border-radius: 5%;
     }
 
     .founder-section h3 {
@@ -128,13 +153,13 @@
 
     .founder-title {
         font-size: 0.9rem;
-        color: #555;
+        color: #4D602B;
         margin-bottom: 1rem;
     }
 
     .founder-section blockquote {
         font-style: italic;
-        color: #444;
+        color: #4D602B;
         max-width: 600px;
         margin: 0.5rem auto;
     }
@@ -316,7 +341,7 @@
                         healthier, more balanced future.
                     </p>
                 </div>
-                <button id="readMoreBtn">Read More ▼</button>
+                <button id="readMoreBtn" class="btn">Read More ▼</button>
             </div>
         </article>
 
@@ -421,7 +446,7 @@
                     timeless wisdom of the past while forging a path to the future.
                     </p>
                 </div>
-                <button id="readMoreStoryBtn">Read More ▼</button>
+                <button id="readMoreStoryBtn" class="btn">Read More ▼</button>
             </div>
         </article>
 
@@ -431,19 +456,19 @@
                 <h2>Our Values</h2>
                 <div class="values-list">
                     <div class="value-item">
-                        <img src="placeholder-icon.png" alt="100% Natural icon">
+                        <i class="fas fa-seedling"></i>
                         <p>100% Natural</p>
                     </div>
                     <div class="value-item">
-                        <img src="placeholder-icon.png" alt="Handmade icon">
+                        <i class="fas fa-hand-holding-heart"></i>
                         <p>Handmade</p>
                     </div>
                     <div class="value-item">
-                        <img src="placeholder-icon.png" alt="Ethically Sourced icon">
+                        <i class="fas fa-handshake"></i>
                         <p>Ethically Sourced</p>
                     </div>
                     <div class="value-item">
-                        <img src="placeholder-icon.png" alt="Eco-Conscious icon">
+                        <i class="fas fa-recycle"></i>
                         <p>Eco-Conscious</p>
                     </div>
                 </div>
@@ -453,7 +478,7 @@
         <!-- Founder Info Section -->
         <section class="founder-section">
             <div class="section-content text-center">
-                <img src="placeholder-founder.jpg" alt="Dr. Prerna, Founder" class="founder-photo">
+                <img src="img/Founder.jpg" alt="Dr. Prerna, Founder" class="founder-photo">
                 <h3>Dr. Prerna</h3>
                 <p class="founder-title">Founder &amp; CEO</p>
                 <aside>
